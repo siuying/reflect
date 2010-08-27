@@ -1,9 +1,8 @@
 # Rakefile
 require 'rubygems'
-require 'bundler'
-Bundler.require(:default)
+require 'echoe'
 
-Echoe.new('reflect', '0.1.0') do |p|
+Echoe.new('reflect', '0.1.1') do |p|
   p.description    = "Send your Tweets to Plurk"
   p.url            = "http://github.com/siuying/reflect"
   p.author         = "Francis Chong"

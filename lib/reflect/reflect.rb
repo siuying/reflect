@@ -2,8 +2,10 @@ require 'open-uri'
 require 'logger'
 
 require 'rubygems'
-require 'bundler'
-Bundler.require(:default)
+require 'rake'
+require 'twitter/json_stream'
+require 'plurk'
+require 'json'
 
 module Reflect
   class Main
