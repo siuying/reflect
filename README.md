@@ -4,7 +4,7 @@ Reflect listen to your twitter stream, and retweet your message to plurk.
 
 ## Install ##
 
-    gem install reflect
+   sudo gem install reflect
 
 ## Usage ##
 
