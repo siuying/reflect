@@ -4,9 +4,9 @@ Reflect listen to your twitter stream, and retweet your message to plurk.
 
 ## Install ##
 
-1. Install [http://www.ruby-lang.org/en/downloads/](Ruby)
+1. Install Ruby at [http://www.ruby-lang.org/en/downloads/](Ruby)
 
-2. Install Reflect
+3. Install Reflect
 
 		sudo gem install reflect
 
