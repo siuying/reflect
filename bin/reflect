@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require 'reflect'
+include Reflect::Helpers
+
+#### Read Configuration ####
+CONFIG = configure(config_file)
+
+reflect = Reflect::Main.new(CONFIG)
+reflect.listen
