@@ -1,13 +1,21 @@
-# Reflect - A retweet bot for Plurk #
+# Reflect - Reflect your tweet to Plurk #
 
 Reflect listen to your twitter stream, and retweet your message to plurk.
 
+## Install ##
+
+    gem install reflect
+
 ## Usage ##
 
-1. Clone the repository
-2. Create file config/config.yml from config/config.default.yml, enter your twitter username/password and plurk api key/username/password. Get Plurk API key at [http://www.plurk.com/API](http://www.plurk.com/API).
-3. Run the app using following command line: 
+1. Simply run the following command
 
-			ruby reflect.rb
+		reflect
+
+2. If you are first time running reflect, it will create a configure file at ~/.reflect/config.yml. Add your twitter and plurk authentication info there and start reflect again. You will need Plurk API key at [http://www.plurk.com/API](http://www.plurk.com/API).
+
+## Information ##
+
+For more information or bug report, go to our [http://github.com/siuying/reflect](Homepage)
 
 Released under MIT License.
