@@ -57,7 +57,15 @@ module Reflect
         end
 
         stream.on_max_reconnects do |timeout, retries|
-      	  @logger.error "max reconnects reached"
+      	  @logger.error "max reconnects reached: timeout: #{timeout}, retries: #{retries}"
+
+      	  # reconnect after 15 minutes
+      	  stream.stop
+      	  sleep(900)
+      	  stream = Twitter::JSONStream.connect(
+            :path    => "/1/statuses/filter.json?follow=#{@user_id}",
+            :auth    => @twitter_auth
+          )
         end
 
         trap('TERM') {
